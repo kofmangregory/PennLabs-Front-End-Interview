@@ -11,3 +11,5 @@ Notice that the placeholder text disappears when a user clicks.
 
 The shopping cart has its own separate Javascript file for toggling between the cart and the button. The button has a notification showing
 the status of the cart. Once clicked, the display is toggled, and the cart appears. 
+
+The next thing I'd like to handle would be better tolerance for window resizing.
