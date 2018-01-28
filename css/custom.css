@@ -1,0 +1,436 @@
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: #3f3f3f;
+  position: fixed;
+}
+
+/* Progress Bar in Navbar  */
+.navbar .progress {
+  height: 40%;
+  width: 20%;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 0px;
+}
+
+
+/* Progress Sections, tried to match colors as well as I could */
+.navbar .progress .pb-green {
+  background-color: #00868B;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  margin: 0px;
+}
+
+.navbar .progress .pb-gray {
+  background-color: #a8a8a8;
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+  margin: 0px;
+}
+
+.navbar .progress .pb-white {
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  margin: 0px;
+}
+
+
+/* Navbar links */
+.navbar .options-block {
+  float: right;
+  width: 70%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.navbar .options-block .options-list li{
+  display: inline;
+  padding: 10px;
+}
+
+.navbar .options-block .options-list li:hover {
+  background-color: #787878;
+  border-radius: 5px;
+}
+
+.options-block .options-list li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Cool animation for the categories item */
+#categories {
+  transition: all 0.5s;
+}
+
+#categories a span {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+#categories a span:after {
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+#categories:hover span {
+  padding-right: 25px;
+}
+
+#categories:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Form styling */
+.form-section .form-header {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.form-section .row .container {
+  width: 70%;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.form-section .row .container .col-3 {
+  font: 14px "Lato", Arial, sans-serif;
+  min-width: 25%;
+  min-height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-section .row .container .txt {
+  margin-top: 10px;
+  display: inline;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.form-section .row .container .frm {
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.row {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+  /* padding: 20px 0 50px; */
+}
+
+:focus {
+  outline: none;
+}
+
+.col-3 {
+  float: left;
+  /* width: 27.33%; */
+  position: relative;
+}
+
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+/* Wow, a cool input border effect */
+.wow-bar-effect {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.wow-bar-effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+
+.wow-bar-effect:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* Submit button */
+.submit {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    align: center;
+}
+
+.submit:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/* Cart section */
+.cart-section {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.cart-section .shop-button .btn {
+  position: absolute;
+  box-shadow: 5px 10px #888888;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+/* Cart button */
+.shop-button .btn {
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  padding: 5px 5px;
+}
+
+/* Notification Icon */
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 4px;
+  color: white;
+
+  width: 17px;
+
+  padding: 3px 3px;
+  font-size: 12px;
+
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 0;
+  right: 0;
+}
+
+/* The actual cart */
+.show-expand {
+  border-radius: 5px;
+  display: none;
+  height: 100%;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+/* Cart header */
+.expand-header {
+  top: 0;
+  border-bottom: 1px solid gray;
+  font-family: "Slabo", sans-serif;
+  width: 100%;
+  height: 15%;
+  background-color: #D3D3D3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.expand-header h5 {
+  left: 0;
+  margin-left: 10px;
+  margin-top: 8px;
+  padding-top: 10px;
+}
+
+/* Body of cart */
+.cart-body {
+  width: 100%;
+  height: 65%;
+  padding: 10px;
+  background-color: #D3D3D3;
+}
+
+/* Cart item contains image, name, price, delete button, and quantity*/
+.cart-item {
+  width: 100%;
+  top: 0;
+  height: 35%;
+  border-bottom: 1px solid gray;
+}
+
+.cart-item-image {
+  height: 100%;
+  padding-bottom: 5px;
+  width: 20%;
+  display: inline-block;
+  float: left;
+}
+
+.cart-item-image img {
+  height: 90%;
+}
+
+.cart-item-text {
+  height: 70%;
+  width: 40%;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.cart-item-text #name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom: 0;
+}
+
+.cart-item-text #delete-and-qty {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 22px;
+}
+
+.cart-item-text #delete-and-qty a,
+.cart-item-text #delete-and-qty p {
+  text-decoration: none;
+  color: gray;
+}
+
+.cart-item-price {
+  float: right;
+}
+
+/* Footer contains checkout button and exit */
+.cart-footer {
+  height: 20%;
+}
+
+.checkout {
+  width: 80%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+}
+
+.checkout-button {
+  display: inline-block;
+  background-color: #42C0FB;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  height: 87%;
+  border-bottom-left-radius: 10px;
+  border-top: 1px solid gray;
+}
+
+.checkout-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.checkout-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.checkout-button:hover span {
+  padding-right: 25px;
+}
+
+.checkout-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.exit {
+  width: 20%;
+  height: 87%;
+  float: right;
+}
+
+.exit-button {
+  background-color: #D3D3D3;
+  border: none;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid gray;
+}
+
+.exit-button:hover {
+  background-color: #B8B8B8;
+}

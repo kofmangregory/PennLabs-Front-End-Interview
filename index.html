@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Links and meta tags -->
+
+  <!-- Character set -->
+  <meta charset="UTF-8">
+
+  <!-- Adjustment for device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Internet Explorer compatibility  -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Link to custom css stylesheet -->
+  <link rel="stylesheet" type='text/css' href="css/custom.css">
+
+  <!-- Bootstrap CSS Link  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google font: Fjalla One -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+  <!-- Google font: Slabo -->
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+  <title>Penn Labs Frontend Interview</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <!-- I initially tried to use a Bootstrap navbar,
+       but I figured I'd be customizing it too much, so I made my own-->
+
+  <nav class="navbar navbar-inverse">
+    <div class="progress">
+      <div class="pb-green">
+      </div>
+      <div class="pb-gray">
+      </div>
+      <div class="pb-white">
+      </div>
+    </div>
+    <div class="options-block">
+      <ul class="options-list">
+        <li id="about"><a href="#">About</a></li>
+        <li id="projects"><a href="#">Projects</a></li>
+        <li id="blog"><a href="#">Blog</a></li>
+        <li id="contact"><a href="#">Contact</a></li>
+        <li id="categories"><a href="#"><span>Categories</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Form Section with graphical text input and submit button-->
+  <!-- Bootstrap for column divisons  -->
+  <div class="form-section">
+    <div class="form-header">
+      <h1 id="header-content">Instantly reach us by filling out the form below</h2>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-3 txt">
+          <p id="first-frm-txt">Hi there, my name is </p>
+        </div>
+        <div class="col-3 frm">
+          <input class="wow-bar-effect" type="text" placeholder="how people call you" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'how people call you'">
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3 txt">
+          <p>I want to speak about </p>
+        </div>
+        <div class="col-3 frm">
+          <input class="wow-bar-effect" type="text" placeholder="what's the problem" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'what\'s the problem'">
+          <span class="focus-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-3 txt">
+          <p>You can reach me via email at </p>
+        </div>
+        <div class="col-3 frm">
+          <input class="wow-bar-effect" type="text" placeholder="the real one" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'the real one'" />
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3 txt">
+          <p>or </p>
+        </div>
+        <div class="col-3 frm">
+          <input class="wow-bar-effect" type="text" placeholder="skype, phone, codename" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'skype, phone, codename'">
+          <span class="focus-border"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-3 txt">
+          <p>My ballpark for this project is </p>
+        </div>
+        <div class="col-3 frm">
+          <input class="wow-bar-effect" type="text" placeholder="$$$$$$$$" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '$$$$$$$$'">
+          <span class="focus-border"></span>
+        </div>
+        <div class="col-3 txt">
+          <p>US Dollars.</p>
+        </div>
+        <div class="col-3 frm">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button class="button submit">Submit</button>
+    </div>
+  </div>
+
+  <!-- Cart Section -->
+  <!-- Cart expands by toggling display style attribute -->
+  <div class="cart-section">
+    <div class="shop-button" id="cart-button">
+      <button class="btn btn-light" onclick="expand()"><i class="fa fa-shopping-cart"><span class="button__badge">1</span></i></button>
+    </div>
+    <div class="show-expand" id="expand">
+      <div class="expand-header">
+        <h5>Cart</h5>
+      </div>
+      <div class="cart-body">
+        <div class="cart-item">
+          <div class="cart-item-image">
+            <img src="img/shopping-item.JPG">
+          </div>
+          <div class="cart-item-text">
+            <p id="name">Product Name</p>
+            <p id="delete-and-qty"><a href="#">Delete &nbsp; &nbsp;</a> Qty 1</p>
+          </div>
+          <div class="cart-item-price">
+            <p id="price">$25.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="checkout">
+          <button class="checkout-button" style="vertical-align:middle"><span>Checkout </span></button>
+        </div>
+        <div class="exit">
+          <button class="exit-button" style="vertical-align:middle" onclick="compress()">X</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Javascript file for toggling display -->
+<script src="js/shopping-cart.js"></script>
+</body>
+</html>
